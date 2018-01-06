@@ -105,4 +105,4 @@ for i in range(10000):
     distance = (center1_loc[0] - x_center) ** 2 + (center1_loc[1] - y_center) ** 2
     distance = distance ** 0.5
     jump(distance)
-    time.sleep(1.3)
+    time.sleep(1.3 + random.random()/2)
