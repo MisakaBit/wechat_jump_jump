@@ -19,7 +19,9 @@ def get_screenshot(id):
 
 def jump(distance):
     # 这个参数还需要针对屏幕分辨率进行优化
-    press_time = int(distance * 1.35)
+    # 小米5s 1080p，1.35跑了几十分，1.45跑了320分，1.46跑了550分
+    press_time = int(distance * 1.46)
+    
 
     # 生成随机手机屏幕模拟触摸点
     # 模拟触摸点如果每次都是同一位置，成绩上传可能无法通过验证
